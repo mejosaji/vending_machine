@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname))); // Serve static files from root
 
 // MongoDB Connection (updated without deprecated options)
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect("mongodb+srv://mejosaji12:eFHDqTdGPLd9nCIz@cluster0.nksm57n.mongodb.net/")
     .then(() => console.log('✅ Connected to MongoDB'))
     .catch(err => {
         console.error('❌ MongoDB connection error:', err);
